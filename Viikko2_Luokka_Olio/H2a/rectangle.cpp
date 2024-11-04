@@ -14,6 +14,7 @@ void Rectangle::setHeight(double newHeight)
 
 void Rectangle::printInfo(double c, double a)
 {
+    cout << "\n----SUORAKULMION TIEDOT----" << endl;
     cout << "Suorakulmion pinta-ala: " << a << endl;
     cout << "Suorakulmion ympärysmitta: " << c << endl;
 }

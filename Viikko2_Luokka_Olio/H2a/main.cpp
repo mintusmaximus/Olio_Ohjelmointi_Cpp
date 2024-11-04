@@ -9,7 +9,6 @@ using namespace std;
 
 int main()
 {
-
     /*
     Vaihe 1: Car-luokka
 
@@ -32,11 +31,11 @@ int main()
 
     */
     Car carObj1;
-
     carObj1.setModel("S65 AMG");
     carObj1.setBrand("Mercedez");
     carObj1.setYearModel(2015);
     carObj1.printData();
+
 
 
 
@@ -60,9 +59,6 @@ int main()
         Tulosta suorakulmion pinta-ala ja ympärysmitta.
         Tuhoa olio.
     */
-
-
-
     Rectangle *rectObj = new Rectangle;
 
     int rectangleH = 6;
@@ -79,8 +75,6 @@ int main()
 
     delete rectObj;
     rectObj = nullptr;
-
-
 
 
 
@@ -112,8 +106,14 @@ int main()
         Tulosta opiskelijan tiedot käyttämällä get-metodeja.
     */
 
+    // luodaan smart pointer ja asetetaan alkuarvot konstruktorin avulla
+    unique_ptr<Student> objStudent1=make_unique<Student>("Nimi", 1234, 4.23);
 
-    unique_ptr<Student> objStudent1=make_unique<Student>();
+    cout << "\n----OPISKELIJAN TIEDOT----" << endl;
+    cout << "Opiskelijanumero: " << objStudent1->getStudentNumber() << endl;
+    cout << "Nimi: " << objStudent1->getName() << endl;
+    cout << "Keskiarvo: " << objStudent1->getAverage() << endl;
+
 
 
 

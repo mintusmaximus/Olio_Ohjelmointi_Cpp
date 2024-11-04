@@ -15,6 +15,7 @@ private:
 
 public:
     Student();
+    Student(string n, int sn, double avg); // konstruktori mainissa annettaville arvoille
     string getName() const;
     void setName(const string &newName);
     int getStudentNumber() const;

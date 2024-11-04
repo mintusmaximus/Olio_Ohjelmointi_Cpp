@@ -31,3 +31,11 @@ void Student::setAverage(double newAverage)
 }
 
 Student::Student() {}
+
+Student::Student(string n, int sn, double avg)
+{
+    name = n;
+    studentNumber = sn;
+    average = avg;
+}
+

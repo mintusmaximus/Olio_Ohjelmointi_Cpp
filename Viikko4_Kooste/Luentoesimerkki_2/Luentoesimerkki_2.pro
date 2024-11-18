@@ -4,10 +4,10 @@ CONFIG -= app_bundle
 CONFIG -= qt
 
 SOURCES += \
-        classroom.cpp \
-        main.cpp \
-        student.cpp
+        form.cpp \
+        loginform.cpp \
+        main.cpp
 
 HEADERS += \
-    classroom.h \
-    student.h
+    form.h \
+    loginform.h

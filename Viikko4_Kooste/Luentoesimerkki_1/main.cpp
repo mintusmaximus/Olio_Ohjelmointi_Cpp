@@ -1,9 +1,11 @@
 #include <iostream>
+#include "classroom.h"
 
 using namespace std;
 
 int main()
 {
-    cout << "Hello World!" << endl;
+    ClassRoom objClassRoom;
+    objClassRoom.printData();
     return 0;
 }

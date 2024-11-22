@@ -22,10 +22,10 @@ void Car::setBrand(const string &newBrand)
 
 void Car::printDetails()
 {
-    // tulostetaan tämän olion sisällä olevien yksityisten olioiden tiedot (car->engine->size jne.)
+    // tulostetaan tämän olion sisällä olevien yksityisten olioiden tiedot (car.engine.size jne.)
     cout << "Auto: " << this->brand << " " << this->model << endl;
 
-    cout << "Rengas Takavasen: " << this->objWheelBL.getSize()
+    cout << "Rengas Takavasen: " << objWheelBL.getSize()
          << ", " << this->objWheelBL.getType() << endl;
 
     cout << "Rengas Takaoikea: " << this->objWheelBR.getSize()
@@ -41,10 +41,35 @@ void Car::printDetails()
          << " hp, " << this->objEngine.getDisplacement() << " L" << endl;
 }
 
-Car::Car() {}
+Car::Car()
+{
+
+}
+
 
 Car::Car(string br, string mo)
 {
     this->brand = br;
     this->model = mo;
+}
+
+void Car::setEngine()
+{
+    objEngine.setDisplacement(2);
+    objEngine.setHorsePower(150);
+}
+
+void Car::setWheels()
+{
+    objWheelBL.setType("Kesärengas");
+    objWheelBL.setSize(17);
+
+    objWheelBR.setType("Kesärengas");
+    objWheelBR.setSize(17);
+
+    objWheelFL.setType("Kesärengas");
+    objWheelFL.setSize(17);
+
+    objWheelFR.setType("Kesärengas");
+    objWheelFR.setSize(17);
 }

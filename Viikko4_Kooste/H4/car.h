@@ -12,16 +12,18 @@ private:
     string model, brand;
 
     // luodaan autoon kuuluvat osat samalla, kun luodaan auton olio
-    Wheel objWheelFL = Wheel(14, "Kesärengas"); // front left
-    Wheel objWheelFR = Wheel(14, "Kesärengas"); // front right
-    Wheel objWheelBL = Wheel(14, "Kesärengas"); // back left
-    Wheel objWheelBR = Wheel(14, "Kesärengas"); // back right
-    Engine objEngine = Engine(150, 2.0);
+    Wheel objWheelFL; // front left
+    Wheel objWheelFR; // front right
+    Wheel objWheelBL; // back left
+    Wheel objWheelBR; // back right
+    Engine objEngine;
 
 public:
     Car();
     Car(string, string); // konstruktori mallille ja merkille samaan aikaan
 
+    void setEngine();
+    void setWheels();
     string getModel() const;
     void setModel(const string &newModel);
     string getBrand() const;

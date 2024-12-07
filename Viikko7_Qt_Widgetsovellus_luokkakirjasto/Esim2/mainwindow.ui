@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>682</width>
+    <height>528</height>
+   </rect>
+  </property>
+  <property name="font">
+   <font>
+    <pointsize>20</pointsize>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLabel" name="labelUsername">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>40</y>
+      <width>139</width>
+      <height>36</height>
+     </rect>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>211</width>
+      <height>16777215</height>
+     </size>
+    </property>
+    <property name="text">
+     <string>Tekstikenttä</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="buttonLogin">
+    <property name="geometry">
+     <rect>
+      <x>220</x>
+      <y>40</y>
+      <width>107</width>
+      <height>44</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Kirjaudu</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="buttonForm1">
+    <property name="geometry">
+     <rect>
+      <x>220</x>
+      <y>150</y>
+      <width>123</width>
+      <height>44</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Lomake 1</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="buttonForm2">
+    <property name="geometry">
+     <rect>
+      <x>220</x>
+      <y>200</y>
+      <width>123</width>
+      <height>44</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Lomake 2</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="buttonForm3">
+    <property name="geometry">
+     <rect>
+      <x>220</x>
+      <y>250</y>
+      <width>132</width>
+      <height>44</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Aseta nimi</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="labelUName">
+    <property name="geometry">
+     <rect>
+      <x>210</x>
+      <y>300</y>
+      <width>139</width>
+      <height>36</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Tekstikenttä</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="buttonPersonData">
+    <property name="geometry">
+     <rect>
+      <x>440</x>
+      <y>150</y>
+      <width>170</width>
+      <height>44</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Henkilötiedot</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>682</width>
+     <height>42</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
